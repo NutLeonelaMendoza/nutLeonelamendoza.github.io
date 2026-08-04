@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Nutrióloga clínica Leonela Mendoza. Especialista en trastornos digestivos, enfermedades crónicas y soporte nutricional en Querétaro. Agenda tu consulta presencial en Querétaro online." />
+        <meta name="author" content="José Emilio Ramírez Piña" />
+        <title>Nutrióloga Leonela Mendoza</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="py-2">
+            <h1 class="site-heading text-center text-faded d-none d-lg-block mb-0">
+                <div class="mt-0">
+                    <img src="assets/img/logo.png" alt="Nutrióloga Leonela Mendoza" class="img-fluid" style="max-height: 400px; width: auto; margin-top: -250px; margin-bottom: -110px;" />
+                </div>
+            </h1>
+        </header>
+        
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Nut. Leonela Mendoza</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto justify-content-center w-100">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Bienvenida</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">Sobre mí</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="mision.html">Misión, visión y valores</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="reviews.html">Reseñas</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="services.html">Servicios</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="atention.html">Modalidad de atención</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="cita.html">Agenda cita</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contact & Payment Section -->
+        <section class="page-section cta" id="contact">
+            <div class="container">
+                <!-- Bloque 1: Formulario de contacto -->
+                <div class="row">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded rounded p-4 p-lg-5">
+                            <div class="text-center mb-4">
+                                <h2 class="section-heading mb-3">
+                                    <span class="section-heading-lower">Escríbeme</span>
+                                </h2>
+                                <p class="mb-0">Para agendar consulta y/o obtener más información llena el formulario de abajo. Juntos lograremos tus objetivos.</p>
+                            </div>
+                            
+                            <form action="https://formspree.io/f/xojggeln" method="POST" id="contactForm">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label fw-bold">Nombre completo</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Tu nombre" id="name" required />
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold">Correo electrónico</label>
+                                    <input type="email" name="_replyto" class="form-control" placeholder="tu@email.com" id="email" required />
+                                </div>
+
+                                <!-- Configuración interna de Formspree -->
+                                <input type="hidden" name="_subject" value="Nuevo mensaje desde la web - Nut. Leonela Mendoza">
+                                <input type="text" name="_gotcha" style="display:none" />
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label fw-bold">Mensaje</label>
+                                    <textarea rows="5" name="message" class="form-control" placeholder="¿En qué puedo ayudarte?. Puedo darte más información, costos o también puedes agendar una consulta :)" id="message" required></textarea>
+                                </div>
+
+                                <!-- Contenedor para mensajes de éxito o error -->
+                                <div id="form-status" class="mb-3"></div>
+
+                                <div class="text-center">
+                                    <button type="submit" id="submitBtn" class="btn btn-lg px-4 text-white" style="background-color: #ee7c84; border-color: #ee7c84;">
+                                        Enviar mensaje
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque 2: Pago con PayPal (Aparece inmediatamente abajo con espacio continuo) -->
+                <div class="row mt-4" id="paypal">
+                    <div class="col-xl-9 mx-auto">
+                        <div class="cta-inner bg-faded rounded p-4 p-lg-5">
+                            <div class="text-center">
+                                <h2 class="section-heading mb-3">
+                                    <span class="section-heading-lower">Pago con PayPal</span>
+                                </h2>
+                                <p class="mb-0">También puedes agendar y pagar tu consulta mediante PayPal dando clic en el botón de abajo.</p>
+                            </div>
+                            <div class="text-center">
+                                <a href="https://www.paypal.com/paypalme/NutLeonelaMendoza" target="_blank" class="boton-enlace">Ir al enlace </a>
+                            </div>
+                                    <style>
+                                        .boton-enlace {
+                                            display: inline-block;
+                                            padding: 10px 20px;
+                                            background-color: #ee7c84;
+                                            color: #efe5e3;
+                                            text-decoration: none;
+                                            border-radius: 4px;
+                                            font-weight: bold;
+                                        }
+
+                                        .boton-enlace:hover {
+                                            background-color: #005ea6;
+                                        }
+                                    </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer text-faded text-center py-5">
+            <div class="container"><p class="m-0 small">Copyright &copy; Nut. Leonela Mendoza 2026</p></div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+
+        <!-- Script de envío asíncrono (Formspree) -->
+        <script>
+            const form = document.getElementById("contactForm");
+            const status = document.getElementById("form-status");
+            const submitBtn = document.getElementById("submitBtn");
+
+            async function handleSubmit(event) {
+                event.preventDefault();
+                const data = new FormData(event.target);
+                
+                submitBtn.disabled = true;
+                submitBtn.innerText = "Enviando...";
+
+                fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        status.innerHTML = `<div class="alert alert-success mt-3" role="alert">¡Gracias por tu mensaje! En breve me pondré en contacto contigo.</div>`;
+                        form.reset();
+                    } else {
+                        response.json().then(data => {
+                            if (Object.hasOwn(data, 'errors')) {
+                                status.innerHTML = `<div class="alert alert-danger mt-3" role="alert">${data["errors"].map(error => error["message"]).join(", ")}</div>`;
+                            } else {
+                                status.innerHTML = `<div class="alert alert-danger mt-3" role="alert">Ocurrió un problema al enviar tu mensaje. Inténtalo de nuevo.</div>`;
+                            }
+                        })
+                    }
+                }).catch(error => {
+                    status.innerHTML = `<div class="alert alert-danger mt-3" role="alert">Ocurrió un error de conexión. Por favor verifica tu red.</div>`;
+                }).finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = "Enviar mensaje";
+                });
+            }
+            
+            form.addEventListener("submit", handleSubmit);
+        </script>
+    </body>
+</html>

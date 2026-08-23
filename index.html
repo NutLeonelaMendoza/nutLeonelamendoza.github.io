@@ -14,11 +14,23 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
+        <!-- Pantalla de carga (Preloader) -->
+    <div id="preloader">
+    <div class="svg-loader-container">
+            <!-- 1. SVG de fondo (Silueta clara) -->
+            <div class="svg-base">
+                <img src="assets/img/transicion.svg" alt="Cargando..." />
+            </div>
+            <!-- 2. SVG de frente (Se llena de abajo hacia arriba) -->
+            <div class="svg-fill">
+                <img src="assets/img/transicion.svg" alt="Cargando..." />
+            </div>
+        </div>
+    </div>
         <header class="py-2">
             <h1 class="site-heading text-center text-faded d-none d-lg-block mb-0">
-                <span class="site-heading-upper text-primary mb-1">Nutrióloga Clínica | Licenciada en Nutrición | Maestra en Psicología</span>
                 <div class="mt-0">
-                    <img src="assets/img/logo.png" alt="Nutrióloga Leonela Mendoza" class="img-fluid" style="max-height: 400px; width: auto; margin-top: -150px; margin-bottom: -110px;" />
+                    <img src="assets/img/logo.svg" alt="Nutrióloga Leonela Mendoza" class="img-fluid" style="max-height: 400px; width: auto; margin-top: -150px; margin-bottom: -110px;" />
                 </div>
             </h1>
         </header>
@@ -40,30 +52,50 @@
                 </div>
             </div>
         </nav>
-        <section class="page-section clearfix">
-            <div class="container">
-                <div class="intro">
-                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" style="transform: translateX(10px); width: 40%;" src="assets/img/intro.JPG" alt="Nutrióloga Leonela Mendoza" />
-                    <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-                        <h2 class="section-heading mb-4">
-                            <span class="section-heading-upper">Nutrióloga</span>
-                            <span class="section-heading-lower">Leonela Mendoza</span>
-                        </h2>
-                        <p class="mb-3">Te ayudo a gestionar y mejorar tu salud a través de estrategias nutricionales basadas en evidencia, adaptadas a tu estilo de vida y condición médica y/o nutricional. </p>
-                    </div>
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" style="transform: translateX(10px); width: 40%;" src="assets/img/intro.JPG" alt="Nutrióloga Leonela Mendoza" />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Nutrióloga</span>
+                        <span class="section-heading-lower">Leonela Mendoza</span>
+                    </h2> 
+                    <!-- Preguntas de apertura destacadas y más grandes -->
+                    <p class="mb-3 fs-5">
+                        <strong>¿Enfrentas un diagnóstico médico que transformó tu forma de comer? ¿O buscas mejorar tu alimentación?</strong>
+                    </p>
+                    <!-- Párrafo descriptivo con negritas específicas -->
+                    <p class="mb-0">
+                        Soy la <strong>Nutrióloga Leonela Mendoza</strong> y te ofrezco una atención nutricional <strong>humana, integral y libre de juicios</strong>.
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
         <section class="page-section cta">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-9 mx-auto">
-                        <div class="cta-inner bg-faded text-center rounded">
-                            <h2 class="section-heading mb-4">
-                                <span class="section-heading-upper">Mi promesa</span>
-                                <span class="section-heading-lower">contigo</span>
-                            </h2>
-                            <p class="mb-0">es brindarte una atención nutricional humana, integral y libre de juicios. Comprendo que enfrentar un diagnóstico o padecimiento sin explicación o “motivo alguno”  —ya sea diabetes, una afección renal, digestiva, hormonal, un proceso quirúrgico o el mejorar una relación contigo mismo — puede ser abrumador. Por eso, mi enfoque no se limita a darte una lista de alimentos, sino a acompañarte en cada etapa de tu tratamiento.</p>
+                        <div class="cta-inner bg-faded rounded p-4 p-lg-5 text-center">
+                            <!-- Párrafo 1 -->
+                            <p class="mb-3 text-justify" style="text-align: justify;">
+                                Sé que recibir un diagnóstico como <strong>diabetes, una afección renal, digestiva u hormonal</strong>, o estar atravesando un <strong>procedimiento quirúrgico</strong>, puede ser abrumador. Cuando los síntomas te impiden comer de forma habitual o cuando las restricciones hacen que alimentarte se sienta como un reto diario, es completamente normal sentir incertidumbre.
+                            </p>
+                            <!-- Párrafo 2 -->
+                            <p class="mb-3 text-justify" style="text-align: justify;">
+                                La nutrición no solo es tratamiento, <strong>también es prevención</strong>: de restricciones alimentarias, enfermedades, o de signos y síntomas no habituales que hemos llegado a considerar "normales".
+                            </p>
+                            <!-- Párrafo 3 -->
+                            <p class="mb-4 text-justify" style="text-align: justify;">
+                                Ya sea que busques mejorar tu estilo de vida o requieras apoyo de la mano con un diagnóstico, no tienes que atravesar esto a ciegas. Estoy aquí para acompañarte a resolver esas dificultades, adaptar tu alimentación a tus necesidades reales y ayudarte a recuperar la tranquilidad, la confianza y el bienestar en tu día a día.
+                            </p>
+                            <!-- Frase destacada en itálicas -->
+                            <div class="pt-3 border-top">
+                                <p class="fst-italic text-primary fw-semibold mb-0 fs-5">
+                                    "Recuerda: más allá de un diagnóstico, primero eres una persona. No eres tu condición, eres quien decide cómo vivir con ella."
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -76,5 +108,16 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+    window.addEventListener("load", function() {
+        const preloader = document.getElementById("preloader");
+        if (preloader) {
+            // Suaviza la salida del preloader una vez cargado todo el contenido
+            setTimeout(() => {
+                preloader.classList.add("hidden");
+            }, 300);
+        }
+    });
+    </script>
     </body>
 </html>

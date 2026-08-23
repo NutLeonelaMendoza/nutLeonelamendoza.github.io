@@ -14,11 +14,24 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
+        <!-- Pantalla de carga (Preloader) -->
+    <div id="preloader">
+    <div class="svg-loader-container">
+            <!-- 1. SVG de fondo (Silueta clara) -->
+            <div class="svg-base">
+                <img src="assets/img/transicion.svg" alt="Cargando..." />
+            </div>
+            <!-- 2. SVG de frente (Se llena de abajo hacia arriba) -->
+            <div class="svg-fill">
+                <img src="assets/img/transicion.svg" alt="Cargando..." />
+            </div>
+        </div>
+    </div>
         <header class="py-2">
             <h1 class="site-heading text-center text-faded d-none d-lg-block mb-0">
                 <!-- <span class="site-heading-upper text-primary mb-1">Nutrióloga Clínica | Licenciada en Nutrición | Maestra en Psicología</span>-->
                 <div class="mt-0">
-                    <img src="assets/img/logo.png" alt="Nutrióloga Leonela Mendoza" class="img-fluid" style="max-height: 400px; width: auto; margin-top: -250px; margin-bottom: -110px;" />
+                    <img src="assets/img/logo.svg" alt="Nutrióloga Leonela Mendoza" class="img-fluid" style="max-height: 400px; width: auto; margin-top: -250px; margin-bottom: -110px;" />
                 </div>
             </h1>
         </header>
@@ -50,7 +63,7 @@
                             </h2>
                         </div>
                     </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/mision.jpg" alt="..." />
+                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" style="transform: translateX(10px); width: 30%;" src="assets/img/mision.jpeg" alt="..." />
                     <div class="product-item-description d-flex me-auto">
                         <div class="bg-faded p-5 rounded"><p class="mb-0">Crear un avance constante, consciente y sostenible en tu salud, brindándote una atención nutricional integral, humana y basada en evidencia científica que se adapte a tu vida y salud. </p></div>
                     </div>
@@ -67,7 +80,7 @@
                             </h2>
                         </div>
                     </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/vision.jpg" alt="..." />
+                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" style="transform: translateX(10px); width: 30%;" src="assets/img/vision.jpeg" alt="..." />
                     <div class="product-item-description d-flex ms-auto">
                         <div class="bg-faded p-5 rounded"><p class="mb-0">Trabajar bajo un enfoque biopsicosocial, reconociendo que los hábitos alimentarios y las condiciones clínicas están asociados a múltiples factores: tus antecedentes de salud, antecedentes familiares, entorno, salud mental y contexto emocional. </p></div>
                     </div>
@@ -84,7 +97,7 @@
                             </h2>
                         </div>
                     </div>
-                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="assets/img/valores.jpg" alt="..." />
+                    <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" style="transform: translateX(10px); width: 50%;" src="assets/img/valores.jpeg" alt="..." />
                     <div class="product-item-description d-flex me-auto">
                         <div class="bg-faded p-5 rounded">
                             <ul class="mb-0 ps-3">
@@ -105,5 +118,16 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+    <script>
+    window.addEventListener("load", function() {
+        const preloader = document.getElementById("preloader");
+        if (preloader) {
+            // Suaviza la salida del preloader una vez cargado todo el contenido
+            setTimeout(() => {
+                preloader.classList.add("hidden");
+            }, 300);
+        }
+    });
+    </script>
     </body>
 </html>

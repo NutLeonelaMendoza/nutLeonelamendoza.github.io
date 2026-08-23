@@ -11013,7 +11013,7 @@ p {
 }
 .list-hours .list-hours-item.today {
   font-weight: bold;
-  color: #e6a756;
+  color: #dc4d5c;
 }
 @media (min-width: 992px) {
   .list-hours {
@@ -11030,4 +11030,67 @@ p {
     font-family: 'Montserrat', sans-serif !important; /* Aplica Montserrat (alternativa a Nexa) */
     font-weight: 400 !important;              /* Asegura el peso estándar (no negrita) */
     font-style: normal !important;            /* Asegura que no sea itálica */
+}
+
+/* Pantalla de carga completa */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff8f7; /* Color de fondo de la pantalla de carga */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: opacity 2s ease, visibility 2s ease;
+}
+
+#preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Contenedor del SVG */
+.svg-loader-container {
+    position: relative;
+    width: 480px;  /* Ajusta según el tamaño deseado para el logo */
+    height: 480px;
+}
+
+.svg-base, .svg-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.svg-base img, .svg-fill img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* El fondo tenue del logo */
+.svg-base {
+    opacity: 0.9; /* Muestra la silueta al 20% de opacidad */
+}
+
+/* Animación de rellenado progresivo (clip-path) */
+.svg-fill {
+    animation: fillAnimation 8s infinite ease-in-out;
+}
+
+@keyframes fillAnimation {
+    0% {
+        clip-path: inset(100% 0 0 0); /* Completamente oculto desde abajo */
+    }
+    50% {
+        clip-path: inset(0 0 0 0);    /* Revelado al 100% hasta arriba */
+    }
+    100% {
+        clip-path: inset(0 0 0 0);
+    }
 }

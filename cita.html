@@ -14,10 +14,23 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
+        <!-- Pantalla de carga (Preloader) -->
+    <div id="preloader">
+    <div class="svg-loader-container">
+            <!-- 1. SVG de fondo (Silueta clara) -->
+            <div class="svg-base">
+                <img src="assets/img/transicion.svg" alt="Cargando..." />
+            </div>
+            <!-- 2. SVG de frente (Se llena de abajo hacia arriba) -->
+            <div class="svg-fill">
+                <img src="assets/img/transicion.svg" alt="Cargando..." />
+            </div>
+        </div>
+    </div>
         <header class="py-2">
             <h1 class="site-heading text-center text-faded d-none d-lg-block mb-0">
                 <div class="mt-0">
-                    <img src="assets/img/logo.png" alt="Nutrióloga Leonela Mendoza" class="img-fluid" style="max-height: 400px; width: auto; margin-top: -250px; margin-bottom: -110px;" />
+                    <img src="assets/img/logo.svg" alt="Nutrióloga Leonela Mendoza" class="img-fluid" style="max-height: 400px; width: auto; margin-top: -250px; margin-bottom: -110px;" />
                 </div>
             </h1>
         </header>
@@ -173,5 +186,16 @@
             
             form.addEventListener("submit", handleSubmit);
         </script>
+        <script>
+    window.addEventListener("load", function() {
+        const preloader = document.getElementById("preloader");
+        if (preloader) {
+            // Suaviza la salida del preloader una vez cargado todo el contenido
+            setTimeout(() => {
+                preloader.classList.add("hidden");
+            }, 300);
+        }
+    });
+    </script>
     </body>
 </html>

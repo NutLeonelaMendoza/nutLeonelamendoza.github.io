@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -15,36 +15,37 @@
     </head>
     <body>
         <!-- Pantalla de carga (Preloader) -->
-    <div id="preloader">
-    <div class="svg-loader-container">
-            <!-- 1. SVG de fondo (Silueta clara) -->
-            <div class="svg-base">
-                <img src="assets/img/transicion.svg" alt="Cargando..." />
-            </div>
-            <!-- 2. SVG de frente (Se llena de abajo hacia arriba) -->
-            <div class="svg-fill">
-                <img src="assets/img/transicion.svg" alt="Cargando..." />
+        <div id="preloader">
+            <div class="svg-loader-container">
+                <!-- 1. SVG de fondo (Silueta clara) -->
+                <div class="svg-base">
+                    <img src="assets/img/transicion.svg" alt="Cargando..." />
+                </div>
+                <!-- 2. SVG de frente (Se llena de abajo hacia arriba) -->
+                <div class="svg-fill">
+                    <img src="assets/img/transicion.svg" alt="Cargando..." />
+                </div>
             </div>
         </div>
-    </div>
+
         <header class="py-2">
             <h1 class="site-heading text-center text-faded d-none d-lg-block mb-0">
-                <!-- <span class="site-heading-upper text-primary mb-1">Nutrióloga Clínica | Licenciada en Nutrición | Maestra en Psicología</span>-->
                 <div class="mt-0">
                     <img src="assets/img/logo.svg" alt="Nutrióloga Leonela Mendoza" class="img-fluid" style="max-height: 400px; width: auto; margin-top: -250px; margin-bottom: -110px;" />
                 </div>
             </h1>
         </header>
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
             <div class="container">
-                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Nut. Leonela Mendoza</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Bienvenida</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">Sobre mi</a></li>
-                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="mision.html">Mision, visión y valores</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="about.html">Sobre mí</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="mision.html">Misión, visión y valores</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="reviews.html">Reseñas</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="services.html">Servicios</a></li>
                         <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="atention.html">Modalidad de atención</a></li>
@@ -53,58 +54,147 @@
                 </div>
             </div>
         </nav>
+
         <section class="page-section cta">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-9 mx-auto">
+                    <div class="col-xl-16 mx-auto">
                         <div class="cta-inner bg-faded text-center rounded">
                             <h2 class="section-heading mb-5">
                                 <span class="section-heading-lower">Servicios</span>
                             </h2>
-                            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-                                <li class="list-unstyled-item list-hours-item d-flex flex-column mb-3 pb-3 border-bottom">
-                                    <div class="fw-bold text-uppercase mb-1" style="color: #ee7c84;">Atención Estándar</div>
-                                        <span class="text-muted small">Evaluación para la prevención y optimización de la salud general. Incluye valoración antropométrica, clínica, metabólica y del estilo de vida, además del manejo de trastornos funcionales como Síndrome de Intestino Irritable, estreñimiento o distensión abdominal.</span>
+                            <ul class="list-unstyled list-hours mb-8 text-start mx-auto" id="listaServicios">
+                                
+                                <!-- Servicio 1 -->
+                                <li class="list-unstyled-item list-hours-item mb-3 pb-3 border-bottom">
+                                    <div class="fw-bold text-uppercase mb-1 d-flex justify-content-between align-items-center" 
+                                         style="color: #ee7c84; cursor: pointer;" 
+                                         data-bs-toggle="collapse" 
+                                         data-bs-target="#servicio1" 
+                                         aria-expanded="false" 
+                                         aria-controls="servicio1">
+                                        <span>Atención Estándar</span>
+                                        <small class="fs-6">▼</small>
+                                    </div>
+                                    <div class="collapse mt-2" id="servicio1" data-bs-parent="#listaServicios">
+                                        <ul class="text-muted small ps-3 mb-0 text-start">
+                                            <li class="mb-3">Evaluación y abordaje nutricional base para la prevención, optimización y salud general.</li>
+                                            <li class="mb-3">Valoración Nutricional Integral: Evaluación antropométrica, clínica, metabólica y del estilo de vida para construir un diagnóstico preciso.</li>
+                                            <li class="mb-3">Manejo de Trastornos Funcionales Digestivos: Abordaje nutricional en Síndrome de Intestino Irritable (SII), estreñimiento funcional, dispepsia y distensión abdominal.</li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="list-unstyled-item list-hours-item d-flex flex-column mb-3 pb-3 border-bottom">
-                                    <div class="fw-bold text-uppercase mb-1" style="color: #ee7c84;">Atención en Enfermedades Crónico-Degenerativas</div>
-                                        <span class="text-muted small">Control metabólico, prevención y educación del paciente a largo plazo para el manejo integral de enfermedades como la diabetes(Tipo 1, Tipo 2 y gestacional), problemas cardiovasculares, renales, respiratorios crónicos y padecimientos hormonales(Resistencia a la Insulina, Hipotiroidismo, Hipertiroidismo, Síndrome de Ovario Poliquístico y Síndrome Cardiovascular-Renal-Metabólico).</span>
+
+                                <!-- Servicio 2 -->
+                                <li class="list-unstyled-item list-hours-item mb-3 pb-3 border-bottom">
+                                    <div class="fw-bold text-uppercase mb-1 d-flex justify-content-between align-items-center" 
+                                         style="color: #ee7c84; cursor: pointer;" 
+                                         data-bs-toggle="collapse" 
+                                         data-bs-target="#servicio2" 
+                                         aria-expanded="false" 
+                                         aria-controls="servicio2">
+                                        <span>Atención en Enfermedades Crónico-Degenerativas</span>
+                                        <small class="fs-6">▼</small>
+                                    </div>
+                                    <div class="collapse mt-2" id="servicio2" data-bs-parent="#listaServicios">
+                                        <ul class="text-muted small ps-3 mb-0 text-start">
+                                            <li class="mb-3">Manejo especializado orientado al control metabólico, prevención de complicaciones y educación del paciente a largo plazo.</li>
+                                            <li class="mb-3">Educación y Manejo Integral en Diabetes: Acompañamiento en Diabetes Tipo 1, Tipo 2 y Gestacional; conteo de carbohidratos, automanejo, monitoreo glucémico y prevención de complicaciones.</li>
+                                            <li class="mb-3">Salud Cardiovascular y Renal: Atención en Hipertensión Arterial Sistémica (HAS), Enfermedad Renal Crónica (ERC), Lesión Renal Aguda (LRA) y terapias de reemplazo renal (hemodiálisis y diálisis).</li>
+                                            <li class="mb-3">Salud Respiratoria Crónica: Manejo nutricional en Enfermedad Pulmonar Obstructiva Crónica (EPOC) para la preservación de la masa muscular y capacidad respiratoria.</li>
+                                            <li class="mb-3">Padecimientos Endocrinos y Metabólicos: Abordaje integral en trastornos hormonales y complejos (Resistencia a la Insulina, Hipotiroidismo, Hipertiroidismo, Síndrome de Ovario Poliquístico y Síndrome Cardiovascular-Renal-Metabólico).</li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="list-unstyled-item list-hours-item d-flex flex-column mb-3 pb-3 border-bottom">
-                                    <div class="fw-bold text-uppercase mb-1" style="color: #ee7c84;">Nutrición Quirúrgica y Adaptación de Consistencias</div>
-                                        <span class="text-muted small">Estrategias perioperatorias enfocadas en optimizar el estado metabólico, acelerar la recuperación y garantizar una alimentación segura. Estrategias de optimización nutricional antes de la cirugía y recuperación guiada para minimizar complicaciones posterior al procedimiento.</span>
+
+                                <!-- Servicio 3 -->
+                                <li class="list-unstyled-item list-hours-item mb-3 pb-3 border-bottom">
+                                    <div class="fw-bold text-uppercase mb-1 d-flex justify-content-between align-items-center" 
+                                         style="color: #ee7c84; cursor: pointer;" 
+                                         data-bs-toggle="collapse" 
+                                         data-bs-target="#servicio3" 
+                                         aria-expanded="false" 
+                                         aria-controls="servicio3">
+                                        <span>Nutrición Quirúrgica y Adaptación de Consistencias</span>
+                                        <small class="fs-6">▼</small>
+                                    </div>
+                                    <div class="collapse mt-2" id="servicio3" data-bs-parent="#listaServicios">
+                                        <ul class="text-muted small ps-3 mb-0 text-start">
+                                            <li class="mb-3">Estrategias perioperatorias enfocadas en optimizar el estado metabólico, acelerar la recuperación y garantizar una alimentación segura. </li>
+                                            <li class="mb-3">EEstrategias Pre y Postquirúrgicas: Preparación y optimización nutricional antes de la cirugía, y recuperación guiada para minimizar complicaciones y prevenir la desnutrición pre, intrahospitalaria y post hospitalaria. </li>
+                                            <li class="mb-3">Dietas Modificadas en Consistencia: Adaptación personalizada de la textura y consistencia de los alimentos para garantizar una deglución segura y una adecuada absorción de nutrimentos.</li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="list-unstyled-item list-hours-item d-flex flex-column mb-3 pb-3 border-bottom">
-                                    <div class="fw-bold text-uppercase mb-1" style="color: #ee7c84;">Atención de Especialidad</div>
-                                        <span class="text-muted small">Intervenciones clínicas y nutricionales avanzadas para el diagnóstico y tratamiento de patologías digestivas(Enfermedad Celíaca, Enfermedad Inflamatoria Intestinal, Diverticulitis, entre otras), abordaje de la desnutrición y la sarcopenia además de apoyo en tratamientos oncologicos.</span>
+
+                                <!-- Servicio 4 -->
+                                <li class="list-unstyled-item list-hours-item mb-3 pb-3 border-bottom">
+                                    <div class="fw-bold text-uppercase mb-1 d-flex justify-content-between align-items-center" 
+                                         style="color: #ee7c84; cursor: pointer;" 
+                                         data-bs-toggle="collapse" 
+                                         data-bs-target="#servicio4" 
+                                         aria-expanded="false" 
+                                         aria-controls="servicio4">
+                                        <span>Atención de Especialidad</span>
+                                        <small class="fs-6">▼</small>
+                                    </div>
+                                    <div class="collapse mt-2" id="servicio4" data-bs-parent="#listaServicios">
+                                        <ul class="text-muted small ps-3 mb-0 text-start">
+                                            <li class="mb-3">Intervenciones clínicas y nutricionales avanzadas para el diagnóstico y tratamiento de patologías.</li>
+                                            <li class="mb-3">Nutrición Digestiva y Gastrointestinal Compleja: Manejo clínico en patologías del tubo digestivo como ERGE (Enfermedad por Reflujo Gastroesofágico), Esofagitis Eosinofílica, Acalasia y trastornos motores, Estenosis Esofágica, Enfermedad Celíaca, Enfermedad Inflamatoria Intestinal (Enfermedad de Crohn y Colitis Ulcerosa), Diverticulitis, Colelitiasis, Colecistitis, Síndrome Post-colecistectomía y Fístulas enterocutáneas de alto y bajo gasto.</li>
+                                            <li class="mb-3">Abordaje de la Desnutrición y Sarcopenia: Tratamiento nutricional clínico orientado a la recuperación tisular, preservación muscular y estado nutricional crítico.</li>
+                                            <li class="mb-3">Oncología.</li>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li class="list-unstyled-item list-hours-item d-flex flex-column mb-3 pb-3 border-bottom">
-                                    <div cclass="fw-bold text-uppercase mb-1" style="color: #ee7c84;">Soporte Nutricional Avanzado</div>
-                                        <span class="text-muted small">Atención médica especializada para la prescripción, implementación y gestión de vías de alimentación enteral a corto y largo plazo mediante sondas orogástricas, nasogástricas y nasoduodenales además de vías de alimentación parenterales(periférico y central).</span>
+
+                                <!-- Servicio 5 -->
+                                <li class="list-unstyled-item list-hours-item mb-3 pb-3 border-bottom">
+                                    <div class="fw-bold text-uppercase mb-1 d-flex justify-content-between align-items-center" 
+                                         style="color: #ee7c84; cursor: pointer;" 
+                                         data-bs-toggle="collapse" 
+                                         data-bs-target="#servicio5" 
+                                         aria-expanded="false" 
+                                         aria-controls="servicio5">
+                                        <span>Soporte Nutricional Avanzado</span>
+                                        <small class="fs-6">▼</small>
+                                    </div>
+                                    <div class="collapse mt-2" id="servicio5" data-bs-parent="#listaServicios">
+                                        <ul class="text-muted small ps-3 mb-0 text-start">
+                                            <li class="mb-3">Atención médica especializada para la prescripción, implementación y gestión de vías de alimentación enteral, parenteral y mixta.</li>
+                                            <li class="mb-3">Implementación y Seguimiento Nutricional: Prescripción, cálculo y monitoreo de nutrición enteral, parenteral y nutrición mixta (combinación de vía moral, enteral y parenteral).</li>
+                                            <li class="mb-3">Accesos enterales nutricionales a Corto Plazo:  de sondas orogástricas, nasogástricas y nasoduodenales.</li>
+                                            <li class="mb-3">Accesos enterales nutricionales a Largo Plazo:  Gastrostomía Endoscópica Percutánea (PEG), Gastrostomía-Yeyunostomía Endoscópica Percutánea (PEGJ), Yeyunostomía Quirúrgica y Botón Gástrico.</li>
+                                            <li class="mb-3">Accesos parenteral: periférico y central.</li>
+                                        </ul>
+                                    </div>
                                 </li>
+
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <footer class="footer text-faded text-center py-5">
             <div class="container"><p class="m-0 small">Copyright &copy; Nut Leonela Mendoza 2026</p></div>
         </footer>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
         <script>
-    window.addEventListener("load", function() {
-        const preloader = document.getElementById("preloader");
-        if (preloader) {
-            // Suaviza la salida del preloader una vez cargado todo el contenido
-            setTimeout(() => {
-                preloader.classList.add("hidden");
-            }, 300);
-        }
-    });
-    </script>
+            window.addEventListener("load", function() {
+                const preloader = document.getElementById("preloader");
+                if (preloader) {
+                    setTimeout(() => {
+                        preloader.classList.add("hidden");
+                    }, 300);
+                }
+            });
+        </script>
     </body>
 </html>

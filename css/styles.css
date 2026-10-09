@@ -10876,7 +10876,7 @@ p {
 }
 
 .bg-faded {
-  background-color: #FFFAFA;
+  background-color: #FFFAFA; /* Aqui va el color del fondo de los recuadros de texto */
 }
 
 .btn-xl {
